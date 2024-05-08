@@ -17,7 +17,13 @@ const PORT = process.env.PORT || 8080;
 const Server = () =>
   HTTP.createServer(async (req, res) => {
     const q = url.parse(req.url);
-    let file_name = "./public" + (req.url === "/" ? "/index" : q.pathname);
+    let file_name;
+    if (req.url === "/" || req.url === "/index.html") {
+      file_name = "./index";
+    } else {
+      console.log("Request url :", req.url);
+      file_name = "./public" + q.pathname;
+    }
     console.log(req.url);
     const Extension = extname(file_name);
     if (!Extension) {
