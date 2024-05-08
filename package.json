@@ -1,0 +1,21 @@
+{
+  "name": "-top_basic_informational_site",
+  "version": "1.0.0",
+  "description": "This is my Odin project basic Information site which runs off a locally hosted node server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brent-the-carpenter/-TOP_Basic_Informational_Site.git"
+  },
+  "author": "Brent Harrington",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brent-the-carpenter/-TOP_Basic_Informational_Site/issues"
+  },
+  "homepage": "https://github.com/Brent-the-carpenter/-TOP_Basic_Informational_Site#readme"
+}
